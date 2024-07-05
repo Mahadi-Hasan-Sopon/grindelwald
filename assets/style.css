@@ -1,0 +1,888 @@
+@import url("./fonts/fonts.css");
+
+.view-div {
+  width: 100%;
+  height: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  background-color: #1b3936;
+}
+
+body::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/body-bg.png");
+  opacity: 0.15;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.block {
+  display: block;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  background-color: #1b3936;
+}
+
+/* .container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/body-bg.png");
+  opacity: 0.15;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
+} */
+
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#hero-section .hero-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#hero-section .hero-section .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 113px;
+}
+
+#hero-section .hero-section .navigation .left-nav,
+#hero-section .hero-section .navigation .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#hero-section .hero-section .navigation .left-nav a,
+#hero-section .hero-section .navigation .right-nav a {
+  font-family: switzer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#hero-section .hero-section .line {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hero-section .hero-section .line img {
+  width: 83%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#hero-section .hero-section .icon {
+  position: absolute;
+  top: 54%;
+  right: 86px;
+  transform: translateY(-54%);
+  z-index: 1;
+}
+
+#hero-section .hero-section .hero-section_content {
+  position: relative;
+  z-index: 12;
+  padding: 85px 0 115px 0;
+}
+
+#hero-section .hero-section .hero-section_content h1 {
+  font-family: boska;
+  text-align: center;
+}
+
+#hero-section .hero-section .hero-section_content h1 span.big {
+  font-size: 262px;
+  line-height: 162px;
+  margin-left: -94px;
+}
+
+#hero-section .hero-section .hero-section_content h1 span.small {
+  font-size: 32px;
+  line-height: 42px;
+  padding-top: 40px;
+}
+
+#hero-section .hero-section .hero-section_content h1 span.text-colored {
+  color: #75ff69;
+  font-style: italic;
+  justify-content: flex-end;
+  padding-left: 450px;
+  padding-top: 60px;
+}
+
+#hero-section .hero-section .hero-section_content h1 span.last {
+  padding-left: 90px;
+  margin-top: -28px;
+}
+
+#hero-section .hero-section .hero-section_content .hero-title-bg {
+  position: absolute;
+  top: -5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#hero-section .hero-section .hero-section_content .hero-title-bg img {
+  display: block;
+  width: 570px;
+  height: 570px;
+  border-radius: 100%;
+}
+
+#hero-section .hero-section .hero-section_content .hero-text {
+  text-align: center;
+  width: 40%;
+  margin: 55px auto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* hero section css end */
+
+/* details section css start */
+
+#details-section .details-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background-color: white;
+}
+
+#details-section .details-section .content-box {
+  padding: 105px;
+  display: flex;
+}
+
+#details-section .details-section .content-box .left-content,
+#details-section .details-section .content-box .right-content {
+  width: 50%;
+}
+
+#details-section .details-section .content-box .left-content .left-content-text,
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: switzer;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .left-content
+  .left-content-text {
+  padding-left: 18px;
+  padding-top: 38px;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-box {
+  padding-top: 9px;
+  padding-left: 110px;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-box
+  .right-content-number {
+  margin-top: -26px;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-box
+  .right-content-number
+  .big {
+  font-size: 100px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: boska;
+  line-height: 130px;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-box
+  .right-content-number
+  .measure {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: switzer;
+  line-height: 32px;
+  padding-left: 8px;
+}
+
+#details-section
+  .details-section
+  .content-box
+  .right-content
+  .right-content-box
+  .right-content-number
+  .measure
+  .sup {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#details-section .details-section .content-box .right-content .middle-content {
+  padding: 102px 0;
+}
+
+/* details section css end */
+
+#view-image-section .view-image-section .view-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 850px;
+}
+
+/* about us section css start */
+
+.blueish {
+  color: #678784;
+}
+
+#about-us-section .about-us-section {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 200px 100px 350px;
+}
+
+#about-us-section .about-us-section .content-box {
+  padding: 30px 60px;
+}
+
+#about-us-section .about-us-section .content-box .title {
+  font-size: 24px;
+  color: #75ff69;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about-us-section .about-us-section .content-box .text-content {
+  font-size: 68px;
+  font-family: boska;
+  font-style: italic;
+  line-height: 88px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#about-us-section .about-us-section .top-left-bg,
+#about-us-section .about-us-section .top-right-bg,
+#about-us-section .about-us-section .bottom-left-bg,
+#about-us-section .about-us-section .bottom-right-bg {
+  position: absolute;
+  width: 401px;
+  height: auto;
+  z-index: -1;
+}
+
+#about-us-section .about-us-section .top-left-bg {
+  top: 20%;
+  left: 3%;
+  background-image: linear-gradient(
+      to right,
+      rgba(27, 57, 54, 0),
+      rgba(27, 57, 54, 1)
+    ),
+    url("../assets/images/about-us-top-left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 345px;
+}
+
+#about-us-section .about-us-section .top-right-bg {
+  top: 5%;
+  right: 5%;
+  background-image: linear-gradient(
+      to bottom left,
+      rgba(27, 57, 54, 0),
+      rgba(27, 57, 54, 1)
+    ),
+    url("../assets/images/about-us-top-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 531px;
+}
+
+#about-us-section .about-us-section .bottom-left-bg {
+  bottom: 5%;
+  left: 10%;
+  background-image: linear-gradient(
+      to top,
+      rgba(27, 57, 54, 0),
+      rgba(27, 57, 54, 1)
+    ),
+    url("../assets/images/about-us-bottom-left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 531px;
+}
+
+#about-us-section .about-us-section .bottom-right-bg {
+  bottom: 3%;
+  right: 10%;
+  background-image: linear-gradient(
+      to top,
+      rgba(27, 57, 54, 0),
+      rgba(27, 57, 54, 1)
+    ),
+    url("../assets/images/about-us-bottom-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 531px;
+}
+
+/* about us section css end */
+
+/* room carousel section css start  */
+
+#room-carousel-section .room-carousel-section {
+  position: relative;
+  z-index: 2;
+  background: rgba(249, 249, 249, 1);
+  margin: 150px 0 0;
+  padding: 205px 20px 35px;
+}
+
+#room-carousel-section .room-carousel-section .top-intersect {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  min-height: 100px;
+  z-index: 2;
+}
+
+#room-carousel-section .room-carousel-section h1 {
+  width: 70%;
+  font-size: 68px;
+  padding: 0 105px;
+}
+
+#room-carousel-section .room-carousel-section .carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 147px 0px;
+  gap: 30px;
+}
+
+#room-carousel-section .room-carousel-section .carousel-item {
+  flex: 0 0 378px;
+  height: 505px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#room-carousel-section .room-carousel-section .carousel-item.active {
+  flex: 0 0 582px;
+  height: 780px;
+}
+
+#room-carousel-section .room-carousel-section .carousel .one {
+  background-image: url("../assets/images/Majestic-Mountain.png");
+}
+
+#room-carousel-section .room-carousel-section .carousel .two {
+  background-image: url("../assets/images/Cozy-Cabin.png");
+}
+
+#room-carousel-section .room-carousel-section .carousel .three {
+  background-image: url("../assets/images/Majestic-Mountain-2.png");
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item
+  .item-content {
+  color: white;
+  padding: 18px 40px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item
+  .item-content
+  .title-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item.active
+  .item-content
+  .title-icon
+  h2 {
+  font-family: boska;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item.active
+  .item-content
+  .title-icon
+  h2 {
+  font-size: 68px;
+  font-weight: 500;
+  text-align: left;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item
+  .item-content
+  .title-icon
+  .icon {
+  display: none;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item.active
+  .item-content
+  .title-icon
+  .icon {
+  display: block;
+  cursor: pointer;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel
+  .carousel-item
+  .item-details {
+  display: none;
+}
+
+#room-carousel-section
+  .room-carousel-section
+  .carousel-item.active
+  .item-details {
+  display: block;
+  font-family: switzer;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 10px;
+  width: 70%;
+}
+
+#room-carousel-section .room-carousel-section .nav-button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* room carousel section css end   */
+
+/* sign up section css start  */
+
+#sign-up-section .sign-up-section {
+  position: inherit;
+  z-index: 2;
+  padding: 105px 120px 45px;
+}
+
+#sign-up-section .sign-up-section .content-box {
+  padding: 170px;
+  background: url("../assets/images/sign-up-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#sign-up-section .sign-up-section .content-box h2 {
+  width: 70%;
+  font-size: 68px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 auto;
+  color: white;
+}
+
+#sign-up-section .sign-up-section .content-box h2 .text-green {
+  color: rgba(117, 255, 105, 1);
+}
+
+#sign-up-section .sign-up-section .content-box p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: switzer;
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+}
+
+#sign-up-section .sign-up-section .content-box .sign-up-form .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+#sign-up-section
+  .sign-up-section
+  .content-box
+  .sign-up-form
+  .input-group
+  input {
+  width: 400px;
+  height: 61px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: switzer;
+  color: gray;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+#sign-up-section
+  .sign-up-section
+  .content-box
+  .sign-up-form
+  .input-group
+  button {
+  padding: 18px 38px;
+  background-color: rgba(117, 255, 105, 1);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: switzer;
+  border: none;
+}
+
+/* sign up section css end   */
+
+/* testimonial section css start   */
+
+#testimonial-section .testimonial-section {
+  background: rgba(249, 249, 249, 1);
+  padding: 73px 130px;
+  position: inherit;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+#testimonial-section .testimonial-section .content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  color: rgba(27, 57, 54, 1);
+}
+
+#testimonial-section .testimonial-section .content-box h1 {
+  font-size: 68px;
+  padding-left: 8px;
+}
+
+#testimonial-section .testimonial-section .content-box p {
+  width: 57%;
+  font-size: 18px;
+  padding-bottom: 14px;
+  padding-left: 23px;
+}
+
+#testimonial-section .testimonial-section .testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 173px 20px 100px;
+}
+
+#testimonial-section .testimonial-section .testimonials .testimonial-item {
+  flex: 0 0 378px;
+  height: 480px;
+  position: relative;
+  margin: 0 30px;
+}
+
+.font-22px {
+  font-size: 22px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+#testimonial-section .testimonial-section .testimonials .item-1 {
+  background: url("../assets/images/testimonial-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0;
+}
+
+#testimonial-section .testimonial-section .testimonials .item-2 {
+  background: url("../assets/images/testimonial-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#testimonial-section .testimonial-section .testimonials .item-3 {
+  background: url("../assets/images/testimonial-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonials
+  .testimonial-item
+  .testimonial-content {
+  position: absolute;
+  bottom: 18px;
+  left: -68px;
+  width: 420px;
+  background: white;
+  padding: 20px 15px;
+  color: rgba(27, 57, 54, 1);
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonials
+  .testimonial-item
+  .testimonial-content
+  .content-wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    white
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#testimonial-section .testimonial-section .testimonial-nav-button-group {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .left-arrow,
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .right-arrow {
+  width: 60px;
+  height: 60px;
+  background: rgba(27, 57, 54, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .left-arrow.active,
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .right-arrow.active {
+  background: rgba(117, 255, 105, 1);
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .left-arrow.active
+  svg
+  path,
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .right-arrow.active
+  svg
+  path {
+  stroke: rgba(27, 57, 54, 1);
+}
+
+#testimonial-section
+  .testimonial-section
+  .testimonial-nav-button-group
+  .right-arrow
+  img {
+  transform: rotate(180deg);
+}
+
+/* testimonial section css end    */

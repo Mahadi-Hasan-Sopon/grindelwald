@@ -1,0 +1,39 @@
+@font-face {
+  font-family: switzer;
+  src: url("/assets/fonts/Switzer_Complete/Fonts/WEB/fonts/Switzer-Variable.ttf");
+}
+
+.font-switzer {
+  font-family: switzer;
+}
+
+@font-face {
+  font-family: boska;
+  src: url("/assets/fonts/Boska_Complete/Fonts/WEB/fonts/Boska-Variable.ttf");
+}
+
+.font-boska {
+  font-family: boska;
+}
+
+.font-boska-italic {
+  font-family: boska-italic;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("/assets/fonts/Poppins_Complete/Fonts/WEB/fonts/Poppins-Variable.ttf");
+}
+
+.font-poppins {
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: avenir-next;
+  src: url("/assets/fonts/avenir-next/AvenirNextLTPro-Regular.otf");
+}
+
+.font-avenir {
+  font-family: avenir-next;
+}
