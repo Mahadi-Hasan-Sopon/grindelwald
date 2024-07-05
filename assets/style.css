@@ -110,21 +110,6 @@ img {
   background-color: #1b3936;
 }
 
-/* .container::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/images/body-bg.png");
-  opacity: 0.15;
-  background-repeat: repeat;
-  background-position: top left;
-  background-size: auto;
-} */
-
 section {
   width: 100%;
   height: 100%;
@@ -414,7 +399,7 @@ section {
       rgba(27, 57, 54, 0),
       rgba(27, 57, 54, 1)
     ),
-    url("../assets/images/about-us-top-left.png");
+    url("../assets/images/about-us-top-left.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -429,7 +414,7 @@ section {
       rgba(27, 57, 54, 0),
       rgba(27, 57, 54, 1)
     ),
-    url("../assets/images/about-us-top-right.png");
+    url("../assets/images/about-us-top-right.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -444,7 +429,7 @@ section {
       rgba(27, 57, 54, 0),
       rgba(27, 57, 54, 1)
     ),
-    url("../assets/images/about-us-bottom-left.png");
+    url("../assets/images/about-us-bottom-left.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -459,7 +444,7 @@ section {
       rgba(27, 57, 54, 0),
       rgba(27, 57, 54, 1)
     ),
-    url("../assets/images/about-us-bottom-right.png");
+    url("../assets/images/about-us-bottom-right.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -522,15 +507,15 @@ section {
 }
 
 #room-carousel-section .room-carousel-section .carousel .one {
-  background-image: url("../assets/images/Majestic-Mountain.png");
+  background-image: url("../assets/images/Majestic-Mountain.webp");
 }
 
 #room-carousel-section .room-carousel-section .carousel .two {
-  background-image: url("../assets/images/Cozy-Cabin.png");
+  background-image: url("../assets/images/Cozy-Cabin.webp");
 }
 
 #room-carousel-section .room-carousel-section .carousel .three {
-  background-image: url("../assets/images/Majestic-Mountain-2.png");
+  background-image: url("../assets/images/Majestic-Mountain-2.webp");
 }
 
 #room-carousel-section
@@ -644,7 +629,7 @@ section {
 
 #sign-up-section .sign-up-section .content-box {
   padding: 170px;
-  background: url("../assets/images/sign-up-bg.png");
+  background: url("../assets/images/sign-up-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -769,7 +754,7 @@ section {
 }
 
 #testimonial-section .testimonial-section .testimonials .item-1 {
-  background: url("../assets/images/testimonial-1.png");
+  background: url("../assets/images/testimonial-1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -777,14 +762,14 @@ section {
 }
 
 #testimonial-section .testimonial-section .testimonials .item-2 {
-  background: url("../assets/images/testimonial-2.png");
+  background: url("../assets/images/testimonial-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #testimonial-section .testimonial-section .testimonials .item-3 {
-  background: url("../assets/images/testimonial-3.png");
+  background: url("../assets/images/testimonial-3.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
