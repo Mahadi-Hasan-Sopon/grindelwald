@@ -19,21 +19,3 @@
 .font-boska-italic {
   font-family: boska-italic;
 }
-
-@font-face {
-  font-family: poppins;
-  src: url("/assets/fonts/Poppins_Complete/Fonts/WEB/fonts/Poppins-Variable.ttf");
-}
-
-.font-poppins {
-  font-family: poppins;
-}
-
-@font-face {
-  font-family: avenir-next;
-  src: url("/assets/fonts/avenir-next/AvenirNextLTPro-Regular.otf");
-}
-
-.font-avenir {
-  font-family: avenir-next;
-}
