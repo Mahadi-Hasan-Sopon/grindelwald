@@ -15,6 +15,11 @@ module.exports = {
         bodyBgColor: "#101010",
         chartBarColor: "#157AFF",
       },
+      keyframes: {
+        draw: {
+          "0%": { height: 0 },
+        },
+      },
     },
   },
   plugins: [],
